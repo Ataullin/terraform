@@ -1,9 +1,3 @@
-provider "google" {
-    credentials = file("/Users/r.ataullin/.config/gcloud/application_default_credentials.json")
-    project     = "gcp-educative-project-cli-2024"
-    region      = "us-central1"
-}
-
 resource "google_sql_database_instance" "instance" {
   name             = "my-database-instance"
   region           = "us-central1"
